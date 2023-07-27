@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+body {
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.panels {
+    min-width: 100px;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    background: #6B0F9C;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    transition: 
+    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    background 0.2s;
+    font-size: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+.panel-1 {
+    background: url('https://i.pinimg.com/736x/f8/f8/da/f8f8daba2e37557c137c74062e669e41--washington-state-mountains.jpg');
+    height: 100lvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel-2 {
+    background: url('https://i.pinimg.com/originals/2c/fb/57/2cfb578891a66831f03fe1887341c535.jpg');
+    height: 100lvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel-3 {
+    background: url('https://th.bing.com/th/id/R.a9db0784bc825ab5d61bdbd6ae56d27a?rik=1gQEgRyHYt7xyA&riu=http%3a%2f%2fdestinationnature.com%2fwp-content%2fuploads%2f2013%2f10%2ffox.jpg&ehk=qLd2AkP3oz7FlJ0gupXc2CKS%2bctQuIeCh5%2fwB7vwU9c%3d&risl=&pid=ImgRaw&r=0');
+    height: 100lvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel-4 {
+    background: url('https://thumbs.dreamstime.com/b/male-rock-climber-cliff-climbs-rocky-wall-man-makes-hard-move-73576673.jpg');
+    height: 100lvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel-5 {
+    background: url('https://webneel.com/daily/sites/default/files/images/daily/07-2015/2-beautiful-clouds.jpg');
+    height: 100lvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel>* {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel p {
+    text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    text-shadow: 0 0 4 px rgba(255, 255, 255, 0.5);
+}
+.panel>*:first-child {
+    transform: translateY(-100%);
+}
+.panel.open-active>*:first-child {
+    transform: translateY(0);
+}
+.panel>*:last-child {
+    transform: translateY(100%);
+}
+.panel.open-active>*:last-child {
+    transform: translateY(0);
+}
+
+.panel p:nth-child(2){
+    font-size: 4em;
+}
+.panel.open {
+    font-size: 40px;
+    flex: 5;
+}
+.cta {
+    color: white;
+    text-decoration: none;
+}
